@@ -1,0 +1,8 @@
+=================== REGISTRO DE ENVIO - 23/12/2021 07:02:41 ===================
+
+=================== Respuesta Close2u ===================
+Estado: False
+Comprobante: 03-B005-00010876
+Contenido: status 500 reading PdfApiProxy#generarPdf(String,String,String,Long,String,String); content:
+{"status":500,"message":"Internal Server Error","error":null,"timestamp":"1640304161619","detail":null,"path":null}
+

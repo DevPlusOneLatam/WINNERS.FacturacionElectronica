@@ -1,0 +1,88 @@
+{
+	"close2u": {
+		"tipoIntegracion": "OFFLINE",
+		"tipoRegistro": "PRECIOS_SIN_IGV",
+		"tipoPlantilla": "01"
+	},
+	"emisor": {
+		"correo": "facturacion.peru@winnerssport.com",
+		"nombreComercial": "WINNERS PERU PRODUCTOS DEPORTIVOS SAC",
+		"nombreLegal": "WINNERS PERU PRODUCTOS DEPORTIVOS SAC",
+		"numeroDocumentoIdentidad": "20555212390",
+		"tipoDocumentoIdentidad": "RUC",
+		"domicilioFiscal": {
+			"direccion": "AV. CONQUISTADORES 840 SAN ISIDRO LIMA LIMA",
+			"urbanizacion": "",
+			"distrito": "LIMA",
+			"provincia": "SAN ISIDRO",
+			"departamento": "LIMA",
+			"pais": "PERU",
+			"ubigeo": ""
+		}
+	},
+	"receptor": {
+		"correo": "facturacion.peru@winnerssport.com",
+		"correoCopia": "",
+		"nombreComercial": "CLIENTE PROMOCIONAL",
+		"nombreLegal": "CLIENTE PROMOCIONAL",
+		"numeroDocumentoIdentidad": "C9999999999",
+		"tipoDocumentoIdentidad": "DOC_TRIB_NO_DOM_SIN_RUC",
+		"domicilioFiscal": {
+			"direccion": "SAN ISIDRO  LIMA LIMA PERU",
+			"urbanizacion": "LIMA",
+			"distrito": "",
+			"provincia": "LIMA",
+			"departamento": "LIMA",
+			"pais": "PERU",
+			"ubigeo": ""
+		}
+	},
+	"sector": null,
+	"referencias": null,
+	"cuotas": null,
+	"anticipos": null,
+	"datosDocumento": {
+		"fechaEmision": "2021-10-20",
+		"fechaVencimiento": "2021-10-20",
+		"formaPago": "CONTADO",
+		"glosa": "CARGO DE AUSPICIO - JERRY BROW - WILSON Basado en Pedidos de cliente 2102333.",
+		"horaEmision": "00:00:00",
+		"moneda": "PEN",
+		"numero": "00013419",
+		"ordencompra": "",
+		"puntoEmisor": "",
+		"serie": "B002",
+		"condicionPago": "AUSPICIO"
+	},
+	"detalleDocumento": [
+		{
+			"codigoProducto": "WR8005001001",
+			"codigoProductoSunat": "53121701",
+			"descripcion": "TOUR 3 COMP CLASH BK/Rd/Grey",
+			"tipoAfectacion": "GRAVADO_RETIRO_POR_PREMIO",
+			"unidadMedida": "UNIDAD_BIENES",
+			"cantidad": 1,
+			"valorVentaUnitarioItem": null,
+			"valorReferencialUnitarioItem": 541.525424,
+			"esPorcentaje": null,
+			"descuento": null
+		},
+		{
+			"codigoProducto": "WRZ401200",
+			"codigoProductoSunat": "49161620",
+			"descripcion": "PRO OVRGRP SNSTN 30PK BK",
+			"tipoAfectacion": "GRAVADO_RETIRO_POR_PREMIO",
+			"unidadMedida": "PAQUETE",
+			"cantidad": 1,
+			"valorVentaUnitarioItem": null,
+			"valorReferencialUnitarioItem": 157.542373,
+			"esPorcentaje": null,
+			"descuento": null
+		}
+	],
+	"informacionAdicional": {
+		"tipoOperacion": "VENTA_INTERNA"
+	},
+	"descuentoGlobal": null,
+	"factorCambio": 0.0
+}

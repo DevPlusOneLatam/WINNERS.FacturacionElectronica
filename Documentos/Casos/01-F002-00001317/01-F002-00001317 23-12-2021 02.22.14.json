@@ -1,0 +1,92 @@
+{
+	"close2u": {
+		"tipoIntegracion": "OFFLINE",
+		"tipoRegistro": "PRECIOS_SIN_IGV",
+		"tipoPlantilla": "01"
+	},
+	"emisor": {
+		"correo": "facturacion.peru@winnerssport.com",
+		"nombreComercial": "WINNERS PERU PRODUCTOS DEPORTIVOS SAC",
+		"nombreLegal": "WINNERS PERU PRODUCTOS DEPORTIVOS SAC",
+		"numeroDocumentoIdentidad": "20555212390",
+		"tipoDocumentoIdentidad": "RUC",
+		"domicilioFiscal": {
+			"direccion": "AV. CONQUISTADORES 840 SAN ISIDRO LIMA LIMA",
+			"urbanizacion": "",
+			"distrito": "LIMA",
+			"provincia": "SAN ISIDRO",
+			"departamento": "LIMA",
+			"pais": "PERU",
+			"ubigeo": ""
+		}
+	},
+	"receptor": {
+		"correo": "ventas@mundotenis.com.pe",
+		"correoCopia": "",
+		"nombreComercial": "MT DEPORTES S.A.C",
+		"nombreLegal": "MT DEPORTES S.A.C",
+		"numeroDocumentoIdentidad": "20606920980",
+		"tipoDocumentoIdentidad": "RUC",
+		"domicilioFiscal": {
+			"direccion": "CAL.GRIMALDO DEL SOLAR NRO. 450  LIMA LIMA PERU",
+			"urbanizacion": "MIRAFLORES",
+			"distrito": "",
+			"provincia": "LIMA",
+			"departamento": "LIMA",
+			"pais": "PERU",
+			"ubigeo": ""
+		}
+	},
+	"sector": null,
+	"referencias": null,
+	"cuotas": null,
+	"anticipos": null,
+	"datosDocumento": {
+		"fechaEmision": "2021-07-08",
+		"fechaVencimiento": "2021-07-08",
+		"formaPago": "CONTADO",
+		"glosa": "",
+		"horaEmision": "00:00:00",
+		"moneda": "PEN",
+		"numero": "00001317",
+		"ordencompra": "",
+		"puntoEmisor": "",
+		"serie": "F002",
+		"condicionPago": "CONTADO"
+	},
+	"detalleDocumento": [
+		{
+			"codigoProducto": "WR013711U2",
+			"codigoProductoSunat": "49161607",
+			"descripcion": "BLADE 98 18X20 V7.0 TNS FRM 2",
+			"tipoAfectacion": "GRAVADO_OPERACION_ONEROSA",
+			"unidadMedida": "UNIDAD_BIENES",
+			"cantidad": 1,
+			"valorVentaUnitarioItem": 677.118644,
+			"valorReferencialUnitarioItem": null,
+			"esPorcentaje": "true",
+			"descuento": {
+				"monto": 35.0
+			}
+		},
+		{
+			"codigoProducto": "WR013711U2",
+			"codigoProductoSunat": "49161607",
+			"descripcion": "BLADE 98 18X20 V7.0 TNS FRM 2",
+			"tipoAfectacion": "GRAVADO_OPERACION_ONEROSA",
+			"unidadMedida": "UNIDAD_BIENES",
+			"cantidad": 1,
+			"valorVentaUnitarioItem": 677.118644,
+			"valorReferencialUnitarioItem": null,
+			"esPorcentaje": "true",
+			"descuento": {
+				"monto": 35.0
+			}
+		}
+	],
+	"informacionAdicional": {
+		"tipoOperacion": "VENTA_INTERNA"
+	},
+	"descuentoGlobal": null,
+	"factorCambio": 0.0
+}

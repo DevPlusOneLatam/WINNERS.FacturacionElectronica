@@ -1,0 +1,90 @@
+{
+	"close2u": {
+		"tipoIntegracion": "OFFLINE",
+		"tipoRegistro": "PRECIOS_SIN_IGV",
+		"tipoPlantilla": "01"
+	},
+	"emisor": {
+		"correo": "facturacion.peru@winnerssport.com",
+		"nombreComercial": "WINNERS PERU PRODUCTOS DEPORTIVOS SAC",
+		"nombreLegal": "WINNERS PERU PRODUCTOS DEPORTIVOS SAC",
+		"numeroDocumentoIdentidad": "20555212390",
+		"tipoDocumentoIdentidad": "RUC",
+		"domicilioFiscal": {
+			"direccion": "AV. CONQUISTADORES 840 SAN ISIDRO LIMA LIMA",
+			"urbanizacion": "",
+			"distrito": "LIMA",
+			"provincia": "SAN ISIDRO",
+			"departamento": "LIMA",
+			"pais": "PERU",
+			"ubigeo": ""
+		}
+	},
+	"receptor": {
+		"correo": "INFO@ALTENISSPORTS.COM",
+		"correoCopia": "",
+		"nombreComercial": "FERNANDEZ ALT, MATIAS",
+		"nombreLegal": "FERNANDEZ ALT, MATIAS",
+		"numeroDocumentoIdentidad": "15563733907",
+		"tipoDocumentoIdentidad": "RUC",
+		"domicilioFiscal": {
+			"direccion": "CAL.GRAL CORDOVA NRO. S/N DPTO. 302  LIMA LIMA PERU",
+			"urbanizacion": "MIRAFLORES",
+			"distrito": "",
+			"provincia": "LIMA",
+			"departamento": "LIMA",
+			"pais": "PERU",
+			"ubigeo": ""
+		}
+	},
+	"sector": {
+		"tipoTotalDescuentos": "0"
+	},
+	"referencias": null,
+	"cuotas": null,
+	"anticipos": null,
+	"datosDocumento": {
+		"fechaEmision": "2021-10-20",
+		"fechaVencimiento": "2021-10-20",
+		"formaPago": "CONTADO",
+		"glosa": "",
+		"horaEmision": "00:00:00",
+		"moneda": "PEN",
+		"numero": "00001580",
+		"ordencompra": "",
+		"puntoEmisor": "",
+		"serie": "F002",
+		"condicionPago": "CONTADO"
+	},
+	"detalleDocumento": [
+		{
+			"codigoProducto": "WRB804006-L",
+			"codigoProductoSunat": "53102506",
+			"descripcion": "MUNHEQUEIRA W COLOR MR/AZ",
+			"tipoAfectacion": "GRAVADO_OPERACION_ONEROSA",
+			"unidadMedida": "UNIDAD_BIENES",
+			"cantidad": 1,
+			"valorVentaUnitarioItem": 41.440678,
+			"valorReferencialUnitarioItem": null,
+			"esPorcentaje": null,
+			"descuento": null
+		},
+		{
+			"codigoProducto": "WRB804007-L",
+			"codigoProductoSunat": "53102506",
+			"descripcion": "MUÑEQUERA W COLOR GY/WH G",
+			"tipoAfectacion": "GRAVADO_OPERACION_ONEROSA",
+			"unidadMedida": "PAR",
+			"cantidad": 1,
+			"valorVentaUnitarioItem": 41.440678,
+			"valorReferencialUnitarioItem": null,
+			"esPorcentaje": null,
+			"descuento": null
+		}
+	],
+	"informacionAdicional": {
+		"tipoOperacion": "VENTA_INTERNA"
+	},
+	"descuentoGlobal": 35.0,
+	"factorCambio": 0.0
+}

@@ -1,0 +1,7 @@
+=================== REGISTRO DE ENVIO - 23/12/2021 07:02:53 ===================
+
+=================== Respuesta Close2u ===================
+Estado: True
+Comprobante: 03-B007-00013001
+Contenido: {"serieNumero":"B007-13001","estadoSunat":{"codigo":"1","valor":"Aceptado"},"estadoComprobante":{"codigo":"1","valor":"Declarado"},"estadoEntrega":{"codigo":"1","valor":"Entregado"}}
+

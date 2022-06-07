@@ -1,0 +1,396 @@
+{
+	"close2u": {
+		"tipoIntegracion": "OFFLINE",
+		"tipoRegistro": "PRECIOS_SIN_IGV",
+		"tipoPlantilla": "01"
+	},
+	"emisor": {
+		"correo": "facturacion.peru@winnerssport.com",
+		"nombreComercial": "WINNERS PERU PRODUCTOS DEPORTIVOS SAC",
+		"nombreLegal": "WINNERS PERU PRODUCTOS DEPORTIVOS SAC",
+		"numeroDocumentoIdentidad": "20555212390",
+		"tipoDocumentoIdentidad": "RUC",
+		"domicilioFiscal": {
+			"direccion": "AV. CONQUISTADORES 840 SAN ISIDRO LIMA LIMA",
+			"urbanizacion": "",
+			"distrito": "LIMA",
+			"provincia": "SAN ISIDRO",
+			"departamento": "LIMA",
+			"pais": "PERU",
+			"ubigeo": ""
+		}
+	},
+	"receptor": {
+		"correo": "facturacion.peru@winnerssport.com",
+		"correoCopia": "",
+		"nombreComercial": "PARISS SPORT SOCIEDAD COMERCIAL DE RESPONSABILIDAD LIMITADA",
+		"nombreLegal": "PARISS SPORT SOCIEDAD COMERCIAL DE RESPONSABILIDAD LIMITADA",
+		"numeroDocumentoIdentidad": "20607650561",
+		"tipoDocumentoIdentidad": "RUC",
+		"domicilioFiscal": {
+			"direccion": "JR. MOQUEGUA NRO. 779 OTR. CERCAD  SAN ROMAN PUNO PERU",
+			"urbanizacion": "JULIACA",
+			"distrito": "",
+			"provincia": "SAN ROMAN",
+			"departamento": "PUNO",
+			"pais": "PERU",
+			"ubigeo": ""
+		}
+	},
+	"sector": null,
+	"referencias": {
+		"documentoReferenciaList": [
+			{
+				"tipoDocumento": "GUIAEMISIONREMITENTE",
+				"numero": "00000419",
+				"serie": "T001"
+			}
+		]
+	},
+	"cuotas": null,
+	"anticipos": null,
+	"datosDocumento": {
+		"fechaEmision": "2021-06-16",
+		"fechaVencimiento": "2021-06-16",
+		"formaPago": "CONTADO",
+		"glosa": "Basado en Pedidos de cliente 2101239. Basado en Entregas 2101225.",
+		"horaEmision": "00:00:00",
+		"moneda": "PEN",
+		"numero": "00001334",
+		"ordencompra": "",
+		"puntoEmisor": "",
+		"serie": "F001",
+		"condicionPago": "CONTADO"
+	},
+	"detalleDocumento": [
+		{
+			"codigoProducto": "406059-6.5",
+			"codigoProductoSunat": "53111901",
+			"descripcion": "XA DISCOVERY BKGN M",
+			"tipoAfectacion": "GRAVADO_OPERACION_ONEROSA",
+			"unidadMedida": "PAR",
+			"cantidad": 1,
+			"valorVentaUnitarioItem": 212.076271,
+			"valorReferencialUnitarioItem": null,
+			"esPorcentaje": null,
+			"descuento": null
+		},
+		{
+			"codigoProducto": "406750-8",
+			"codigoProductoSunat": "53111901",
+			"descripcion": "X RADIANT",
+			"tipoAfectacion": "GRAVADO_OPERACION_ONEROSA",
+			"unidadMedida": "PAR",
+			"cantidad": 1,
+			"valorVentaUnitarioItem": 203.262712,
+			"valorReferencialUnitarioItem": null,
+			"esPorcentaje": null,
+			"descuento": null
+		},
+		{
+			"codigoProducto": "411090-8",
+			"codigoProductoSunat": "53111901",
+			"descripcion": "X REVEAL",
+			"tipoAfectacion": "GRAVADO_OPERACION_ONEROSA",
+			"unidadMedida": "PAR",
+			"cantidad": 1,
+			"valorVentaUnitarioItem": 208.771186,
+			"valorReferencialUnitarioItem": null,
+			"esPorcentaje": null,
+			"descuento": null
+		},
+		{
+			"codigoProducto": "409657-6.5",
+			"codigoProductoSunat": "53111902",
+			"descripcion": "SENSE FEEL W",
+			"tipoAfectacion": "GRAVADO_OPERACION_ONEROSA",
+			"unidadMedida": "PAR",
+			"cantidad": 1,
+			"valorVentaUnitarioItem": 208.771186,
+			"valorReferencialUnitarioItem": null,
+			"esPorcentaje": null,
+			"descuento": null
+		},
+		{
+			"codigoProducto": "409657-7",
+			"codigoProductoSunat": "53111902",
+			"descripcion": "SENSE FEEL W",
+			"tipoAfectacion": "GRAVADO_OPERACION_ONEROSA",
+			"unidadMedida": "PAR",
+			"cantidad": 1,
+			"valorVentaUnitarioItem": 208.771186,
+			"valorReferencialUnitarioItem": null,
+			"esPorcentaje": null,
+			"descuento": null
+		},
+		{
+			"codigoProducto": "409643-6.5",
+			"codigoProductoSunat": "53111901",
+			"descripcion": "SENSE FLOW",
+			"tipoAfectacion": "GRAVADO_OPERACION_ONEROSA",
+			"unidadMedida": "PAR",
+			"cantidad": 1,
+			"valorVentaUnitarioItem": 219.788136,
+			"valorReferencialUnitarioItem": null,
+			"esPorcentaje": null,
+			"descuento": null
+		},
+		{
+			"codigoProducto": "409643-7",
+			"codigoProductoSunat": "53111901",
+			"descripcion": "SENSE FLOW",
+			"tipoAfectacion": "GRAVADO_OPERACION_ONEROSA",
+			"unidadMedida": "PAR",
+			"cantidad": 1,
+			"valorVentaUnitarioItem": 219.788136,
+			"valorReferencialUnitarioItem": null,
+			"esPorcentaje": null,
+			"descuento": null
+		},
+		{
+			"codigoProducto": "409643-7.5",
+			"codigoProductoSunat": "53111901",
+			"descripcion": "SENSE FLOW",
+			"tipoAfectacion": "GRAVADO_OPERACION_ONEROSA",
+			"unidadMedida": "PAR",
+			"cantidad": 1,
+			"valorVentaUnitarioItem": 219.788136,
+			"valorReferencialUnitarioItem": null,
+			"esPorcentaje": null,
+			"descuento": null
+		},
+		{
+			"codigoProducto": "413090-4",
+			"codigoProductoSunat": "53111902",
+			"descripcion": "SPEEDCROSS 5 W",
+			"tipoAfectacion": "GRAVADO_OPERACION_ONEROSA",
+			"unidadMedida": "PAR",
+			"cantidad": 1,
+			"valorVentaUnitarioItem": 250.635593,
+			"valorReferencialUnitarioItem": null,
+			"esPorcentaje": null,
+			"descuento": null
+		},
+		{
+			"codigoProducto": "413090-4.5",
+			"codigoProductoSunat": "53111902",
+			"descripcion": "SPEEDCROSS 5 W",
+			"tipoAfectacion": "GRAVADO_OPERACION_ONEROSA",
+			"unidadMedida": "PAR",
+			"cantidad": 1,
+			"valorVentaUnitarioItem": 250.635593,
+			"valorReferencialUnitarioItem": null,
+			"esPorcentaje": null,
+			"descuento": null
+		},
+		{
+			"codigoProducto": "406059-6.5",
+			"codigoProductoSunat": "53111901",
+			"descripcion": "XA DISCOVERY BKGN M",
+			"tipoAfectacion": "GRAVADO_OPERACION_ONEROSA",
+			"unidadMedida": "PAR",
+			"cantidad": 1,
+			"valorVentaUnitarioItem": 212.076271,
+			"valorReferencialUnitarioItem": null,
+			"esPorcentaje": null,
+			"descuento": null
+		},
+		{
+			"codigoProducto": "406619-8",
+			"codigoProductoSunat": "53111901",
+			"descripcion": "XA DISCOVERY BKBL M",
+			"tipoAfectacion": "GRAVADO_OPERACION_ONEROSA",
+			"unidadMedida": "PAR",
+			"cantidad": 1,
+			"valorVentaUnitarioItem": 212.076271,
+			"valorReferencialUnitarioItem": null,
+			"esPorcentaje": null,
+			"descuento": null
+		},
+		{
+			"codigoProducto": "408012-3.5",
+			"codigoProductoSunat": "53111902",
+			"descripcion": "SPEEDCROSS 5 W",
+			"tipoAfectacion": "GRAVADO_OPERACION_ONEROSA",
+			"unidadMedida": "PAR",
+			"cantidad": 1,
+			"valorVentaUnitarioItem": 250.635593,
+			"valorReferencialUnitarioItem": null,
+			"esPorcentaje": null,
+			"descuento": null
+		},
+		{
+			"codigoProducto": "411090-8.5",
+			"codigoProductoSunat": "53111901",
+			"descripcion": "X REVEAL",
+			"tipoAfectacion": "GRAVADO_OPERACION_ONEROSA",
+			"unidadMedida": "PAR",
+			"cantidad": 1,
+			"valorVentaUnitarioItem": 208.771186,
+			"valorReferencialUnitarioItem": null,
+			"esPorcentaje": null,
+			"descuento": null
+		},
+		{
+			"codigoProducto": "409657-6.5",
+			"codigoProductoSunat": "53111902",
+			"descripcion": "SENSE FEEL W",
+			"tipoAfectacion": "GRAVADO_OPERACION_ONEROSA",
+			"unidadMedida": "PAR",
+			"cantidad": 1,
+			"valorVentaUnitarioItem": 208.771186,
+			"valorReferencialUnitarioItem": null,
+			"esPorcentaje": null,
+			"descuento": null
+		},
+		{
+			"codigoProducto": "409657-7",
+			"codigoProductoSunat": "53111902",
+			"descripcion": "SENSE FEEL W",
+			"tipoAfectacion": "GRAVADO_OPERACION_ONEROSA",
+			"unidadMedida": "PAR",
+			"cantidad": 1,
+			"valorVentaUnitarioItem": 208.771186,
+			"valorReferencialUnitarioItem": null,
+			"esPorcentaje": null,
+			"descuento": null
+		},
+		{
+			"codigoProducto": "409643-6.5",
+			"codigoProductoSunat": "53111901",
+			"descripcion": "SENSE FLOW",
+			"tipoAfectacion": "GRAVADO_OPERACION_ONEROSA",
+			"unidadMedida": "PAR",
+			"cantidad": 1,
+			"valorVentaUnitarioItem": 219.788136,
+			"valorReferencialUnitarioItem": null,
+			"esPorcentaje": null,
+			"descuento": null
+		},
+		{
+			"codigoProducto": "409643-8",
+			"codigoProductoSunat": "53111901",
+			"descripcion": "SENSE FLOW",
+			"tipoAfectacion": "GRAVADO_OPERACION_ONEROSA",
+			"unidadMedida": "PAR",
+			"cantidad": 2,
+			"valorVentaUnitarioItem": 219.788136,
+			"valorReferencialUnitarioItem": null,
+			"esPorcentaje": null,
+			"descuento": null
+		},
+		{
+			"codigoProducto": "413090-5",
+			"codigoProductoSunat": "53111902",
+			"descripcion": "SPEEDCROSS 5 W",
+			"tipoAfectacion": "GRAVADO_OPERACION_ONEROSA",
+			"unidadMedida": "PAR",
+			"cantidad": 2,
+			"valorVentaUnitarioItem": 250.635593,
+			"valorReferencialUnitarioItem": null,
+			"esPorcentaje": null,
+			"descuento": null
+		},
+		{
+			"codigoProducto": "408012-6",
+			"codigoProductoSunat": "53111902",
+			"descripcion": "SPEEDCROSS 5 W",
+			"tipoAfectacion": "GRAVADO_OPERACION_ONEROSA",
+			"unidadMedida": "PAR",
+			"cantidad": 1,
+			"valorVentaUnitarioItem": 250.635593,
+			"valorReferencialUnitarioItem": null,
+			"esPorcentaje": null,
+			"descuento": null
+		},
+		{
+			"codigoProducto": "406750-8",
+			"codigoProductoSunat": "53111901",
+			"descripcion": "X RADIANT",
+			"tipoAfectacion": "GRAVADO_OPERACION_ONEROSA",
+			"unidadMedida": "PAR",
+			"cantidad": 1,
+			"valorVentaUnitarioItem": 203.262712,
+			"valorReferencialUnitarioItem": null,
+			"esPorcentaje": null,
+			"descuento": null
+		},
+		{
+			"codigoProducto": "410420-7.5",
+			"codigoProductoSunat": "53111901",
+			"descripcion": "X REVEAL M",
+			"tipoAfectacion": "GRAVADO_OPERACION_ONEROSA",
+			"unidadMedida": "PAR",
+			"cantidad": 1,
+			"valorVentaUnitarioItem": 208.771186,
+			"valorReferencialUnitarioItem": null,
+			"esPorcentaje": null,
+			"descuento": null
+		},
+		{
+			"codigoProducto": "410420-8",
+			"codigoProductoSunat": "53111901",
+			"descripcion": "X REVEAL M",
+			"tipoAfectacion": "GRAVADO_OPERACION_ONEROSA",
+			"unidadMedida": "PAR",
+			"cantidad": 1,
+			"valorVentaUnitarioItem": 208.771186,
+			"valorReferencialUnitarioItem": null,
+			"esPorcentaje": null,
+			"descuento": null
+		},
+		{
+			"codigoProducto": "409657-6",
+			"codigoProductoSunat": "53111902",
+			"descripcion": "SENSE FEEL W",
+			"tipoAfectacion": "GRAVADO_OPERACION_ONEROSA",
+			"unidadMedida": "PAR",
+			"cantidad": 1,
+			"valorVentaUnitarioItem": 208.771186,
+			"valorReferencialUnitarioItem": null,
+			"esPorcentaje": null,
+			"descuento": null
+		},
+		{
+			"codigoProducto": "409657-7",
+			"codigoProductoSunat": "53111902",
+			"descripcion": "SENSE FEEL W",
+			"tipoAfectacion": "GRAVADO_OPERACION_ONEROSA",
+			"unidadMedida": "PAR",
+			"cantidad": 1,
+			"valorVentaUnitarioItem": 208.771186,
+			"valorReferencialUnitarioItem": null,
+			"esPorcentaje": null,
+			"descuento": null
+		},
+		{
+			"codigoProducto": "409643-7",
+			"codigoProductoSunat": "53111901",
+			"descripcion": "SENSE FLOW",
+			"tipoAfectacion": "GRAVADO_OPERACION_ONEROSA",
+			"unidadMedida": "PAR",
+			"cantidad": 1,
+			"valorVentaUnitarioItem": 219.788136,
+			"valorReferencialUnitarioItem": null,
+			"esPorcentaje": null,
+			"descuento": null
+		},
+		{
+			"codigoProducto": "406619-8",
+			"codigoProductoSunat": "53111901",
+			"descripcion": "XA DISCOVERY BKBL M",
+			"tipoAfectacion": "GRAVADO_OPERACION_ONEROSA",
+			"unidadMedida": "PAR",
+			"cantidad": 1,
+			"valorVentaUnitarioItem": 212.076271,
+			"valorReferencialUnitarioItem": null,
+			"esPorcentaje": null,
+			"descuento": null
+		}
+	],
+	"informacionAdicional": {
+		"tipoOperacion": "VENTA_INTERNA"
+	},
+	"descuentoGlobal": null,
+	"factorCambio": 0.0
+}

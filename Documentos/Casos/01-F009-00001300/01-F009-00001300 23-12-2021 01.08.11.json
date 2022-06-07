@@ -1,0 +1,108 @@
+{
+	"close2u": {
+		"tipoIntegracion": "OFFLINE",
+		"tipoRegistro": "PRECIOS_SIN_IGV",
+		"tipoPlantilla": "01"
+	},
+	"emisor": {
+		"correo": "facturacion.peru@winnerssport.com",
+		"nombreComercial": "WINNERS PERU PRODUCTOS DEPORTIVOS SAC",
+		"nombreLegal": "WINNERS PERU PRODUCTOS DEPORTIVOS SAC",
+		"numeroDocumentoIdentidad": "20555212390",
+		"tipoDocumentoIdentidad": "RUC",
+		"domicilioFiscal": {
+			"direccion": "AV. CONQUISTADORES 840 SAN ISIDRO LIMA LIMA",
+			"urbanizacion": "",
+			"distrito": "LIMA",
+			"provincia": "SAN ISIDRO",
+			"departamento": "LIMA",
+			"pais": "PERU",
+			"ubigeo": ""
+		}
+	},
+	"receptor": {
+		"correo": "peledson27@gmail.com",
+		"correoCopia": "",
+		"nombreComercial": "PERU PROCESS SOLUTIONS S.R.L.",
+		"nombreLegal": "PERU PROCESS SOLUTIONS S.R.L.",
+		"numeroDocumentoIdentidad": "20605819118",
+		"tipoDocumentoIdentidad": "RUC",
+		"domicilioFiscal": {
+			"direccion": "AV. JAVIER PRADO OESTE NRO. 757 DPTO. 60  LIMA LIMA PERU",
+			"urbanizacion": "MAGDALENA DEL MAR",
+			"distrito": "",
+			"provincia": "LIMA",
+			"departamento": "LIMA",
+			"pais": "PERU",
+			"ubigeo": ""
+		}
+	},
+	"sector": null,
+	"referencias": {
+		"documentoReferenciaList": [
+			{
+				"tipoDocumento": "GUIAEMISIONREMITENTE",
+				"numero": "00003169",
+				"serie": "T009"
+			}
+		]
+	},
+	"cuotas": null,
+	"anticipos": null,
+	"datosDocumento": {
+		"fechaEmision": "2021-12-10",
+		"fechaVencimiento": "2021-12-10",
+		"formaPago": "CONTADO",
+		"glosa": "127246311988 SAGA FALABELLA 07-12 Basado en Pedidos de cliente 2102868. Basado en Entregas 2102675.",
+		"horaEmision": "00:00:00",
+		"moneda": "PEN",
+		"numero": "00001300",
+		"ordencompra": "127246311988",
+		"puntoEmisor": "",
+		"serie": "F009",
+		"condicionPago": "CONTADO"
+	},
+	"detalleDocumento": [
+		{
+			"codigoProducto": "WTE1288-XB04",
+			"codigoProductoSunat": "49161504",
+			"descripcion": "CORRE SB WHYE SZ4",
+			"tipoAfectacion": "GRAVADO_OPERACION_ONEROSA",
+			"unidadMedida": "UNIDAD_BIENES",
+			"cantidad": 1,
+			"valorVentaUnitarioItem": 42.288136,
+			"valorReferencialUnitarioItem": null,
+			"esPorcentaje": null,
+			"descuento": null
+		},
+		{
+			"codigoProducto": "WTE1289-XB04",
+			"codigoProductoSunat": "49161504",
+			"descripcion": "CORRE SB GRYE SZ4",
+			"tipoAfectacion": "GRAVADO_OPERACION_ONEROSA",
+			"unidadMedida": "UNIDAD_BIENES",
+			"cantidad": 1,
+			"valorVentaUnitarioItem": 42.288136,
+			"valorReferencialUnitarioItem": null,
+			"esPorcentaje": null,
+			"descuento": null
+		},
+		{
+			"codigoProducto": "WTH3500-XDEF",
+			"codigoProductoSunat": "49161608",
+			"descripcion": "SOFT PLAY VOLLEYBALL WHI",
+			"tipoAfectacion": "GRAVADO_OPERACION_ONEROSA",
+			"unidadMedida": "UNIDAD_BIENES",
+			"cantidad": 2,
+			"valorVentaUnitarioItem": 46.525424,
+			"valorReferencialUnitarioItem": null,
+			"esPorcentaje": null,
+			"descuento": null
+		}
+	],
+	"informacionAdicional": {
+		"tipoOperacion": "VENTA_INTERNA"
+	},
+	"descuentoGlobal": null,
+	"factorCambio": 0.0
+}

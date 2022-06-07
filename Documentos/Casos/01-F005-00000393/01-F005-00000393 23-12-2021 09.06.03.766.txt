@@ -1,0 +1,7 @@
+=================== REGISTRO DE ENVIO - 23/12/2021 09:06:03 ===================
+
+=================== Respuesta Close2u ===================
+Estado: True
+Comprobante: 01-F005-00000393
+Contenido: {"serieNumero":"F005-393","estadoSunat":{"codigo":"1","valor":"Aceptado"},"estadoComprobante":{"codigo":"1","valor":"Declarado"},"estadoEntrega":{"codigo":"0","valor":"Por Entregar"}}
+

@@ -1,0 +1,80 @@
+{
+	"close2u": {
+		"tipoIntegracion": "OFFLINE",
+		"tipoRegistro": "PRECIOS_SIN_IGV",
+		"tipoPlantilla": "01"
+	},
+	"emisor": {
+		"correo": "facturacion.peru@winnerssport.com",
+		"nombreComercial": "WINNERS PERU PRODUCTOS DEPORTIVOS SAC",
+		"nombreLegal": "WINNERS PERU PRODUCTOS DEPORTIVOS SAC",
+		"numeroDocumentoIdentidad": "20555212390",
+		"tipoDocumentoIdentidad": "RUC",
+		"domicilioFiscal": {
+			"direccion": "AV. CONQUISTADORES 840 SAN ISIDRO LIMA LIMA",
+			"urbanizacion": "",
+			"distrito": "LIMA",
+			"provincia": "SAN ISIDRO",
+			"departamento": "LIMA",
+			"pais": "PERU",
+			"ubigeo": ""
+		}
+	},
+	"receptor": {
+		"correo": "facturacion.peru@winnerssport.com",
+		"correoCopia": "",
+		"nombreComercial": "SAGA FALABELLA",
+		"nombreLegal": "SAGA FALABELLA",
+		"numeroDocumentoIdentidad": "9999999997",
+		"tipoDocumentoIdentidad": "DOC_TRIB_NO_DOM_SIN_RUC",
+		"domicilioFiscal": {
+			"direccion": "AV INTERNET 140101 LIMA PERU",
+			"urbanizacion": "LIMA",
+			"distrito": "",
+			"provincia": "LIMA",
+			"departamento": "LIMA",
+			"pais": "PERU",
+			"ubigeo": ""
+		}
+	},
+	"sector": null,
+	"datosDocumento": {
+		"fechaEmision": "2021-10-31",
+		"fechaVencimiento": "2021-10-31",
+		"formaPago": "CONTADO",
+		"glosa": "Aumento en el valor",
+		"horaEmision": "00:00:00",
+		"moneda": "PEN",
+		"numero": "00000001",
+		"ordencompra": "",
+		"puntoEmisor": "",
+		"serie": "BD09",
+		"condicionPago": "CONTADO"
+	},
+	"comprobanteAjustado": {
+		"tipoDocumento": "BOLETA",
+		"serie": "B009",
+		"numero": "00002990",
+		"fechaEmision": "2021-07-23"
+	},
+	"detalleDocumento": [
+		{
+			"codigoProducto": "IX14599D",
+			"codigoProductoSunat": "53121603",
+			"descripcion": "MOCHILA CLASICA WILSON",
+			"tipoAfectacion": "GRAVADO_OPERACION_ONEROSA",
+			"unidadMedida": "UNIDAD_BIENES",
+			"cantidad": 1,
+			"valorVentaUnitarioItem": 33.898305,
+			"valorReferencialUnitarioItem": null,
+			"esPorcentaje": null,
+			"descuento": null
+		}
+	],
+	"informacionAdicional": {
+		"tipoOperacion": "VENTA_INTERNA"
+	},
+	"descuentoGlobal": null,
+	"factorCambio": 0.0,
+	"motivo": "AUMENTO_EN_EL_VALOR"
+}

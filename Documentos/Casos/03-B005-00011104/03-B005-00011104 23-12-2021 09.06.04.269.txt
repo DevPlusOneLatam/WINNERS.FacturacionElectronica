@@ -1,0 +1,7 @@
+=================== REGISTRO DE ENVIO - 23/12/2021 09:06:04 ===================
+
+=================== Respuesta Close2u ===================
+Estado: True
+Comprobante: 03-B005-00011104
+Contenido: {"serieNumero":"B005-11104","estadoSunat":{"codigo":"1","valor":"Aceptado"},"estadoComprobante":{"codigo":"1","valor":"Declarado"},"estadoEntrega":{"codigo":"1","valor":"Entregado"}}
+

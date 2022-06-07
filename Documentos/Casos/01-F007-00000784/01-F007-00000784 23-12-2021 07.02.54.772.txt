@@ -1,0 +1,7 @@
+=================== REGISTRO DE ENVIO - 23/12/2021 07:02:54 ===================
+
+=================== Respuesta Close2u ===================
+Estado: True
+Comprobante: 01-F007-00000784
+Contenido: {"serieNumero":"F007-784","estadoSunat":{"codigo":"1","valor":"Aceptado"},"estadoComprobante":{"codigo":"1","valor":"Declarado"},"estadoEntrega":{"codigo":"0","valor":"Por Entregar"}}
+

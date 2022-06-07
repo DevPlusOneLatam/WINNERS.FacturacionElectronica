@@ -1,0 +1,126 @@
+{
+	"close2u": {
+		"tipoIntegracion": "OFFLINE",
+		"tipoRegistro": "PRECIOS_SIN_IGV",
+		"tipoPlantilla": "01"
+	},
+	"datosDocumento": {
+		"fechaEmision": "2021-12-23",
+		"glosa": "DE TIENDA CONQ A E-COMMERCE",
+		"numero": "00000782",
+		"serie": "T002"
+	},
+	"remitente": {
+		"nombreLegal": "WINNERS PERU PRODUCTOS DEPORTIVOS SAC",
+		"numeroDocumentoIdentidad": "20555212390",
+		"tipoDocumentoIdentidad": "RUC"
+	},
+	"destinatario": {
+		"nombreLegal": "WINNERS PERU PRODUCTOS DEPORTIVOS SAC",
+		"numeroDocumentoIdentidad": "20555212390",
+		"tipoDocumentoIdentidad": "RUC"
+	},
+	"datosEnvio": {
+		"motivoTraslado": "TRASLADO_ESTABLECIMIENTOS",
+		"descripcionTraslado": "TRASLADO ENTRE ESTABLECIMIENTOS DE LA MISMA EMPRESA",
+		"transbordoProgramado": "False",
+		"pesoBruto": 10.0,
+		"unidadMedida": "KILOGRAMO",
+		"numeroPallet": 0.0,
+		"modalidadTraslado": "PRIVADO",
+		"fechaTraslado": "2021-12-23",
+		"fechaEntrega": "2021-12-23",
+		"numeroContenedor": 0.0,
+		"puntoLlegada": {
+			"departamento": null,
+			"direccion": "AV. CONQUISTADORES 840 SAN ISIDRO",
+			"distrito": null,
+			"pais": null,
+			"provincia": null,
+			"ubigeo": "140124",
+			"urbanizacion": null
+		},
+		"puntoPartida": {
+			"departamento": null,
+			"direccion": "AV. CONQUISTADORES 840 - (T CONQ) SAN ISIDRO",
+			"distrito": null,
+			"pais": null,
+			"provincia": null,
+			"ubigeo": "140124",
+			"urbanizacion": null
+		}
+	},
+	"transportista": {
+		"nombreLegal": "INTERNO",
+		"numeroDocumentoIdentidad": "99999999",
+		"tipoDocumentoIdentidad": "DOC_NACIONAL_DE_IDENTIDAD"
+	},
+	"vehiculos": [
+		{
+			"placa": "INTERNO",
+			"conductor": {
+				"nombreLegal": "INTERNO",
+				"numeroDocumentoIdentidad": "99999999",
+				"tipoDocumentoIdentidad": "DOC_NACIONAL_DE_IDENTIDAD"
+			}
+		}
+	],
+	"detalleGuia": [
+		{
+			"codigoProducto": "WRB801001-L",
+			"descripcion": "MUÑEQUERA W BK/WH G",
+			"unidadMedida": "PAR",
+			"cantidad": 2,
+			"numeroOrden": "1"
+		},
+		{
+			"codigoProducto": "WTH5510-XB",
+			"descripcion": "TARGET MATCH POINT VB BLUPR",
+			"unidadMedida": "UNIDAD_BIENES",
+			"cantidad": 1,
+			"numeroOrden": "2"
+		},
+		{
+			"codigoProducto": "WRT100101",
+			"descripcion": "CHAMP XD TBALL 3 BALL CAN",
+			"unidadMedida": "TUBOS",
+			"cantidad": 2,
+			"numeroOrden": "3"
+		},
+		{
+			"codigoProducto": "WTH8755-XDEF",
+			"descripcion": "TRADITIONAL BK/WH SZ5 SCR",
+			"unidadMedida": "UNIDAD_BIENES",
+			"cantidad": 1,
+			"numeroOrden": "4"
+		},
+		{
+			"codigoProducto": "WRT100300",
+			"descripcion": "CHAMP RD TBALL 3 BALL CAN",
+			"unidadMedida": "TUBOS",
+			"cantidad": 1,
+			"numeroOrden": "5"
+		},
+		{
+			"codigoProducto": "410957-9",
+			"descripcion": "X RAISE MID GTX",
+			"unidadMedida": "PAR",
+			"cantidad": 1,
+			"numeroOrden": "6"
+		},
+		{
+			"codigoProducto": "WR8011501001",
+			"descripcion": "TEAM 3 PK Blue/Gray",
+			"unidadMedida": "UNIDAD_BIENES",
+			"cantidad": 1,
+			"numeroOrden": "7"
+		},
+		{
+			"codigoProducto": "WR8000301001",
+			"descripcion": "ADVANTAGE II BACKPACK Red/Gy",
+			"unidadMedida": "UNIDAD_BIENES",
+			"cantidad": 1,
+			"numeroOrden": "8"
+		}
+	]
+}

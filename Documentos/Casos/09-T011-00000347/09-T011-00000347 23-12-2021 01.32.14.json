@@ -1,0 +1,119 @@
+{
+	"close2u": {
+		"tipoIntegracion": "OFFLINE",
+		"tipoRegistro": "PRECIOS_SIN_IGV",
+		"tipoPlantilla": "01"
+	},
+	"datosDocumento": {
+		"fechaEmision": "2021-12-22",
+		"glosa": "AGENCIA: CHAN CHAN  DIRECCION: AV. 28 DE JULIO 298 JESUS MARIA",
+		"numero": "00000347",
+		"serie": "T011"
+	},
+	"remitente": {
+		"nombreLegal": "WINNERS PERU PRODUCTOS DEPORTIVOS SAC",
+		"numeroDocumentoIdentidad": "20555212390",
+		"tipoDocumentoIdentidad": "RUC"
+	},
+	"destinatario": {
+		"nombreLegal": "JULIO CAMPANA JIMENO S.A.C.",
+		"numeroDocumentoIdentidad": "20136127064",
+		"tipoDocumentoIdentidad": "RUC"
+	},
+	"datosEnvio": {
+		"motivoTraslado": "VENTA",
+		"descripcionTraslado": "VENTA",
+		"transbordoProgramado": "False",
+		"pesoBruto": 20.0,
+		"unidadMedida": "KILOGRAMO",
+		"numeroPallet": 0.0,
+		"modalidadTraslado": "PRIVADO",
+		"fechaTraslado": "2021-12-23",
+		"fechaEntrega": "2021-12-23",
+		"numeroContenedor": 0.0,
+		"puntoLlegada": {
+			"departamento": null,
+			"direccion": "JR. BOLIVAR NRO. 608  TRUJILLO",
+			"distrito": null,
+			"pais": null,
+			"provincia": null,
+			"ubigeo": "101010",
+			"urbanizacion": null
+		},
+		"puntoPartida": {
+			"departamento": null,
+			"direccion": "AV. NESTOR GAMBETTA KM. 8 (CARRETERA A VENTANILLA) VENTANILLA",
+			"distrito": null,
+			"pais": null,
+			"provincia": null,
+			"ubigeo": "240106",
+			"urbanizacion": null
+		}
+	},
+	"transportista": {
+		"nombreLegal": "HIDALGO CORBACHO, CESAR IVAN",
+		"numeroDocumentoIdentidad": "10257424931",
+		"tipoDocumentoIdentidad": "RUC"
+	},
+	"vehiculos": [
+		{
+			"placa": "A1G888",
+			"conductor": {
+				"nombreLegal": "INTERNO",
+				"numeroDocumentoIdentidad": "99999999",
+				"tipoDocumentoIdentidad": "DOC_NACIONAL_DE_IDENTIDAD"
+			}
+		}
+	],
+	"detalleGuia": [
+		{
+			"codigoProducto": "WRT137500",
+			"descripcion": "US OPEN GREEN TOURMNT TBAL",
+			"unidadMedida": "TUBOS",
+			"cantidad": 24,
+			"numeroOrden": "1"
+		},
+		{
+			"codigoProducto": "WRT137700",
+			"descripcion": "USOPEN ORANG TOURMNT TBAL",
+			"unidadMedida": "TUBOS",
+			"cantidad": 24,
+			"numeroOrden": "2"
+		},
+		{
+			"codigoProducto": "WRZ470810",
+			"descripcion": "PRO OVERGRIP BLADE GR",
+			"unidadMedida": "UNIDAD_BIENES",
+			"cantidad": 6,
+			"numeroOrden": "3"
+		},
+		{
+			"codigoProducto": "WRZ4040-WH",
+			"descripcion": "PRO SOFT OVERGRIP WH",
+			"unidadMedida": "PAQUETE",
+			"cantidad": 6,
+			"numeroOrden": "4"
+		},
+		{
+			"codigoProducto": "WR029210U",
+			"descripcion": "FEDERER 25 RKT 25",
+			"unidadMedida": "UNIDAD_BIENES",
+			"cantidad": 3,
+			"numeroOrden": "5"
+		},
+		{
+			"codigoProducto": "WR029310U",
+			"descripcion": "FEDERER 23 RKT 23",
+			"unidadMedida": "UNIDAD_BIENES",
+			"cantidad": 3,
+			"numeroOrden": "6"
+		},
+		{
+			"codigoProducto": "WR029410U",
+			"descripcion": "FEDERER 21 RKT 21",
+			"unidadMedida": "UNIDAD_BIENES",
+			"cantidad": 3,
+			"numeroOrden": "7"
+		}
+	]
+}

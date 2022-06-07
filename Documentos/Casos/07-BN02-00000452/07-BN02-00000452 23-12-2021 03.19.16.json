@@ -1,0 +1,92 @@
+{
+	"close2u": {
+		"tipoIntegracion": "OFFLINE",
+		"tipoRegistro": "PRECIOS_SIN_IGV",
+		"tipoPlantilla": "01"
+	},
+	"emisor": {
+		"correo": "facturacion.peru@winnerssport.com",
+		"nombreComercial": "WINNERS PERU PRODUCTOS DEPORTIVOS SAC",
+		"nombreLegal": "WINNERS PERU PRODUCTOS DEPORTIVOS SAC",
+		"numeroDocumentoIdentidad": "20555212390",
+		"tipoDocumentoIdentidad": "RUC",
+		"domicilioFiscal": {
+			"direccion": "AV. CONQUISTADORES 840 SAN ISIDRO LIMA LIMA",
+			"urbanizacion": "",
+			"distrito": "LIMA",
+			"provincia": "SAN ISIDRO",
+			"departamento": "LIMA",
+			"pais": "PERU",
+			"ubigeo": ""
+		}
+	},
+	"receptor": {
+		"correo": "facturacion.peru@winnerssport.com",
+		"correoCopia": "",
+		"nombreComercial": "CLIENTE VENTA CONQUISTADORES",
+		"nombreLegal": "CLIENTE VENTA CONQUISTADORES",
+		"numeroDocumentoIdentidad": "99999999993",
+		"tipoDocumentoIdentidad": "DOC_TRIB_NO_DOM_SIN_RUC",
+		"domicilioFiscal": {
+			"direccion": "CALLE MONTE ROSA 140130  LIMA",
+			"urbanizacion": "SANTIAGO DE SURCO",
+			"distrito": "",
+			"provincia": "LIMA",
+			"departamento": "LIMA",
+			"pais": "PERU",
+			"ubigeo": ""
+		}
+	},
+	"sector": null,
+	"datosDocumento": {
+		"fechaEmision": "2021-06-28",
+		"fechaVencimiento": "2021-06-28",
+		"formaPago": "CONTADO",
+		"glosa": "Devolución por ítem",
+		"horaEmision": "00:00:00",
+		"moneda": "PEN",
+		"numero": "00000452",
+		"ordencompra": "",
+		"puntoEmisor": "",
+		"serie": "BN02",
+		"condicionPago": "CONTADO"
+	},
+	"comprobanteAjustado": {
+		"tipoDocumento": "BOLETA",
+		"serie": "B002",
+		"numero": "00011368",
+		"fechaEmision": "2021-06-01"
+	},
+	"detalleDocumento": [
+		{
+			"codigoProducto": "S64139-S",
+			"codigoProductoSunat": "",
+			"descripcion": "CAMISETA THERMO SS M MR",
+			"tipoAfectacion": "GRAVADO_OPERACION_ONEROSA",
+			"unidadMedida": "UNIDAD_BIENES",
+			"cantidad": 1,
+			"valorVentaUnitarioItem": 110.089831,
+			"valorReferencialUnitarioItem": null,
+			"esPorcentaje": null,
+			"descuento": null
+		},
+		{
+			"codigoProducto": "S31702-S",
+			"codigoProductoSunat": "",
+			"descripcion": "JAQUETA STOP F PT",
+			"tipoAfectacion": "GRAVADO_OPERACION_ONEROSA",
+			"unidadMedida": "UNIDAD_BIENES",
+			"cantidad": 1,
+			"valorVentaUnitarioItem": 219.487881,
+			"valorReferencialUnitarioItem": null,
+			"esPorcentaje": null,
+			"descuento": null
+		}
+	],
+	"informacionAdicional": {
+		"tipoOperacion": "VENTA_INTERNA"
+	},
+	"descuentoGlobal": null,
+	"factorCambio": 0.0,
+	"motivo": "DEVOLUCION_POR_ITEM"
+}

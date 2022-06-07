@@ -1,0 +1,88 @@
+{
+	"close2u": {
+		"tipoIntegracion": "CONTINGENCIA",
+		"tipoRegistro": "PRECIOS_SIN_IGV",
+		"tipoPlantilla": "01"
+	},
+	"emisor": {
+		"correo": "facturacion.peru@winnerssport.com",
+		"nombreComercial": "WINNERS PERU PRODUCTOS DEPORTIVOS SAC",
+		"nombreLegal": "WINNERS PERU PRODUCTOS DEPORTIVOS SAC",
+		"numeroDocumentoIdentidad": "20555212390",
+		"tipoDocumentoIdentidad": "RUC",
+		"domicilioFiscal": {
+			"direccion": "AV. CONQUISTADORES 840 SAN ISIDRO LIMA LIMA",
+			"urbanizacion": "",
+			"distrito": "LIMA",
+			"provincia": "SAN ISIDRO",
+			"departamento": "LIMA",
+			"pais": "PERU",
+			"ubigeo": ""
+		}
+	},
+	"receptor": {
+		"correo": "facturacion.peru@winnerssport.com",
+		"correoCopia": "",
+		"nombreComercial": "VELASQUES ESTTANY, EDGAR",
+		"nombreLegal": "VELASQUES ESTTANY, EDGAR",
+		"numeroDocumentoIdentidad": "6161296LR",
+		"tipoDocumentoIdentidad": "PASAPORTE",
+		"domicilioFiscal": {
+			"direccion": "LIMA  LIMA LIMA PERU",
+			"urbanizacion": "LIMA",
+			"distrito": "",
+			"provincia": "LIMA",
+			"departamento": "LIMA",
+			"pais": "PERU",
+			"ubigeo": ""
+		}
+	},
+	"sector": null,
+	"referencias": null,
+	"cuotas": null,
+	"anticipos": null,
+	"datosDocumento": {
+		"fechaEmision": "2021-10-09",
+		"fechaVencimiento": "2021-10-09",
+		"formaPago": "CONTADO",
+		"glosa": "",
+		"horaEmision": "00:00:00",
+		"moneda": "PEN",
+		"numero": "00002441",
+		"ordencompra": "",
+		"puntoEmisor": "",
+		"serie": "0005",
+		"condicionPago": "CONTADO"
+	},
+	"detalleDocumento": [
+		{
+			"codigoProducto": "414426-7.5",
+			"codigoProductoSunat": "53111901",
+			"descripcion": "ALPHACROSS 3",
+			"tipoAfectacion": "GRAVADO_OPERACION_ONEROSA",
+			"unidadMedida": "PAR",
+			"cantidad": 1,
+			"valorVentaUnitarioItem": 309.322034,
+			"valorReferencialUnitarioItem": null,
+			"esPorcentaje": null,
+			"descuento": null
+		},
+		{
+			"codigoProducto": "414463-4",
+			"codigoProductoSunat": "53111902",
+			"descripcion": "ALPHACROSS 3 W",
+			"tipoAfectacion": "GRAVADO_OPERACION_ONEROSA",
+			"unidadMedida": "PAR",
+			"cantidad": 1,
+			"valorVentaUnitarioItem": 309.322034,
+			"valorReferencialUnitarioItem": null,
+			"esPorcentaje": null,
+			"descuento": null
+		}
+	],
+	"informacionAdicional": {
+		"tipoOperacion": "VENTA_INTERNA"
+	},
+	"descuentoGlobal": null,
+	"factorCambio": 0.0
+}

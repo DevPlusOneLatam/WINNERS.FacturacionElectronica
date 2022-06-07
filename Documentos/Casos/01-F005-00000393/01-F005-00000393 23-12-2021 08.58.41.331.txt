@@ -1,0 +1,7 @@
+=================== REGISTRO DE ENVIO - 23/12/2021 08:58:41 ===================
+
+=================== Respuesta Close2u ===================
+Estado: True
+Comprobante: 01-F005-00000393
+Contenido: 
+

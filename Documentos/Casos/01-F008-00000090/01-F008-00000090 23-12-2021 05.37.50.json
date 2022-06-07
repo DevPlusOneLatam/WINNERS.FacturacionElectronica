@@ -1,0 +1,76 @@
+{
+	"close2u": {
+		"tipoIntegracion": "OFFLINE",
+		"tipoRegistro": "PRECIOS_SIN_IGV",
+		"tipoPlantilla": "01"
+	},
+	"emisor": {
+		"correo": "facturacion.peru@winnerssport.com",
+		"nombreComercial": "WINNERS PERU PRODUCTOS DEPORTIVOS SAC",
+		"nombreLegal": "WINNERS PERU PRODUCTOS DEPORTIVOS SAC",
+		"numeroDocumentoIdentidad": "20555212390",
+		"tipoDocumentoIdentidad": "RUC",
+		"domicilioFiscal": {
+			"direccion": "AV. CONQUISTADORES 840 SAN ISIDRO LIMA LIMA",
+			"urbanizacion": "",
+			"distrito": "LIMA",
+			"provincia": "SAN ISIDRO",
+			"departamento": "LIMA",
+			"pais": "PERU",
+			"ubigeo": ""
+		}
+	},
+	"receptor": {
+		"correo": "facturacion.peru@winnerssport.com",
+		"correoCopia": "",
+		"nombreComercial": "FABEGA S.A.S.",
+		"nombreLegal": "FABEGA S.A.S.",
+		"numeroDocumentoIdentidad": "830.071.139",
+		"tipoDocumentoIdentidad": "DOC_TRIB_NO_DOM_SIN_RUC",
+		"domicilioFiscal": {
+			"direccion": "AV CALLE 12 79 A 25 B 14 - P IND V ALSACIA   BOGOTA",
+			"urbanizacion": "",
+			"distrito": "",
+			"provincia": "",
+			"departamento": "BOGOTA",
+			"pais": "COLOMBIA",
+			"ubigeo": ""
+		}
+	},
+	"sector": null,
+	"referencias": null,
+	"cuotas": null,
+	"anticipos": null,
+	"datosDocumento": {
+		"fechaEmision": "2021-08-06",
+		"fechaVencimiento": "2021-08-06",
+		"formaPago": "CONTADO",
+		"glosa": "",
+		"horaEmision": "00:00:00",
+		"moneda": "USD",
+		"numero": "00000090",
+		"ordencompra": "",
+		"puntoEmisor": "",
+		"serie": "F008",
+		"condicionPago": "CONTADO"
+	},
+	"detalleDocumento": [
+		{
+			"codigoProducto": "",
+			"codigoProductoSunat": "",
+			"descripcion": "ANTICIPO DE LA COMPRA DE SS22",
+			"tipoAfectacion": "EXPORTACION",
+			"unidadMedida": "UNIDAD_SERVICIOS",
+			"cantidad": 1,
+			"valorVentaUnitarioItem": 28944.0,
+			"valorReferencialUnitarioItem": null,
+			"esPorcentaje": null,
+			"descuento": null
+		}
+	],
+	"informacionAdicional": {
+		"tipoOperacion": "EXPORTACION"
+	},
+	"descuentoGlobal": null,
+	"factorCambio": 4.074
+}

@@ -1,0 +1,80 @@
+{
+	"close2u": {
+		"tipoIntegracion": "OFFLINE",
+		"tipoRegistro": "PRECIOS_SIN_IGV",
+		"tipoPlantilla": "01"
+	},
+	"emisor": {
+		"correo": "facturacion.peru@winnerssport.com",
+		"nombreComercial": "WINNERS PERU PRODUCTOS DEPORTIVOS SAC",
+		"nombreLegal": "WINNERS PERU PRODUCTOS DEPORTIVOS SAC",
+		"numeroDocumentoIdentidad": "20555212390",
+		"tipoDocumentoIdentidad": "RUC",
+		"domicilioFiscal": {
+			"direccion": "AV. CONQUISTADORES 840 SAN ISIDRO LIMA LIMA",
+			"urbanizacion": "",
+			"distrito": "LIMA",
+			"provincia": "SAN ISIDRO",
+			"departamento": "LIMA",
+			"pais": "PERU",
+			"ubigeo": ""
+		}
+	},
+	"receptor": {
+		"correo": "facturacion.peru@winnerssport.com",
+		"correoCopia": "",
+		"nombreComercial": "CLIENTE VENTA LARCOMAR",
+		"nombreLegal": "CLIENTE VENTA LARCOMAR",
+		"numeroDocumentoIdentidad": "99999999994",
+		"tipoDocumentoIdentidad": "DOC_TRIB_NO_DOM_SIN_RUC",
+		"domicilioFiscal": {
+			"direccion": "LIMA 140101  LIMA",
+			"urbanizacion": "LIMA",
+			"distrito": "",
+			"provincia": "LIMA",
+			"departamento": "LIMA",
+			"pais": "PERU",
+			"ubigeo": ""
+		}
+	},
+	"sector": null,
+	"datosDocumento": {
+		"fechaEmision": "2021-12-23",
+		"fechaVencimiento": "2021-12-23",
+		"formaPago": "CONTADO",
+		"glosa": "Devolución total",
+		"horaEmision": "00:00:00",
+		"moneda": "PEN",
+		"numero": "00000373",
+		"ordencompra": "",
+		"puntoEmisor": "",
+		"serie": "BN05",
+		"condicionPago": "CONTADO"
+	},
+	"comprobanteAjustado": {
+		"tipoDocumento": "BOLETA",
+		"serie": "B005",
+		"numero": "00011001",
+		"fechaEmision": "2021-12-18"
+	},
+	"detalleDocumento": [
+		{
+			"codigoProducto": "412969-8.5",
+			"codigoProductoSunat": "53111901",
+			"descripcion": "TRAILSTER 2",
+			"tipoAfectacion": "GRAVADO_OPERACION_ONEROSA",
+			"unidadMedida": "PAR",
+			"cantidad": 1,
+			"valorVentaUnitarioItem": 330.508475,
+			"valorReferencialUnitarioItem": null,
+			"esPorcentaje": null,
+			"descuento": null
+		}
+	],
+	"informacionAdicional": {
+		"tipoOperacion": "VENTA_INTERNA"
+	},
+	"descuentoGlobal": null,
+	"factorCambio": 0.0,
+	"motivo": "DEVOLUCION_TOTAL"
+}

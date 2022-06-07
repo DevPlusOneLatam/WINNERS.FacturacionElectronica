@@ -1,0 +1,78 @@
+{
+	"close2u": {
+		"tipoIntegracion": "CONTINGENCIA",
+		"tipoRegistro": "PRECIOS_SIN_IGV",
+		"tipoPlantilla": "01"
+	},
+	"emisor": {
+		"correo": "facturacion.peru@winnerssport.com",
+		"nombreComercial": "WINNERS PERU PRODUCTOS DEPORTIVOS SAC",
+		"nombreLegal": "WINNERS PERU PRODUCTOS DEPORTIVOS SAC",
+		"numeroDocumentoIdentidad": "20555212390",
+		"tipoDocumentoIdentidad": "RUC",
+		"domicilioFiscal": {
+			"direccion": "AV. CONQUISTADORES 840 SAN ISIDRO LIMA LIMA",
+			"urbanizacion": "",
+			"distrito": "LIMA",
+			"provincia": "SAN ISIDRO",
+			"departamento": "LIMA",
+			"pais": "PERU",
+			"ubigeo": ""
+		}
+	},
+	"receptor": {
+		"correo": "INFO@ALTENISSPORTS.COM",
+		"correoCopia": "",
+		"nombreComercial": "FERNANDEZ ALT, MATIAS",
+		"nombreLegal": "FERNANDEZ ALT, MATIAS",
+		"numeroDocumentoIdentidad": "15563733907",
+		"tipoDocumentoIdentidad": "RUC",
+		"domicilioFiscal": {
+			"direccion": "CAL.GRAL CORDOVA NRO. S/N DPTO. 302  LIMA LIMA PERU",
+			"urbanizacion": "MIRAFLORES",
+			"distrito": "",
+			"provincia": "LIMA",
+			"departamento": "LIMA",
+			"pais": "PERU",
+			"ubigeo": ""
+		}
+	},
+	"sector": null,
+	"referencias": null,
+	"cuotas": null,
+	"anticipos": null,
+	"datosDocumento": {
+		"fechaEmision": "2021-10-13",
+		"fechaVencimiento": "2021-10-13",
+		"formaPago": "CONTADO",
+		"glosa": "",
+		"horaEmision": "00:00:00",
+		"moneda": "PEN",
+		"numero": "00000727",
+		"ordencompra": "",
+		"puntoEmisor": "",
+		"serie": "0002",
+		"condicionPago": "CONTADO"
+	},
+	"detalleDocumento": [
+		{
+			"codigoProducto": "WRZ609503",
+			"codigoProductoSunat": "53121701",
+			"descripcion": "ADVANTAGE TEAM TRIPLE BAG RD",
+			"tipoAfectacion": "GRAVADO_OPERACION_ONEROSA",
+			"unidadMedida": "UNIDAD_BIENES",
+			"cantidad": 1,
+			"valorVentaUnitarioItem": 98.220339,
+			"valorReferencialUnitarioItem": null,
+			"esPorcentaje": "true",
+			"descuento": {
+				"monto": 40.0
+			}
+		}
+	],
+	"informacionAdicional": {
+		"tipoOperacion": "VENTA_INTERNA"
+	},
+	"descuentoGlobal": null,
+	"factorCambio": 0.0
+}

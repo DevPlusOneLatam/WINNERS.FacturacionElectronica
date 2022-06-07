@@ -1,0 +1,188 @@
+{
+	"close2u": {
+		"tipoIntegracion": "OFFLINE",
+		"tipoRegistro": "PRECIOS_SIN_IGV",
+		"tipoPlantilla": "01"
+	},
+	"emisor": {
+		"correo": "facturacion.peru@winnerssport.com",
+		"nombreComercial": "WINNERS PERU PRODUCTOS DEPORTIVOS SAC",
+		"nombreLegal": "WINNERS PERU PRODUCTOS DEPORTIVOS SAC",
+		"numeroDocumentoIdentidad": "20555212390",
+		"tipoDocumentoIdentidad": "RUC",
+		"domicilioFiscal": {
+			"direccion": "AV. CONQUISTADORES 840 SAN ISIDRO LIMA LIMA",
+			"urbanizacion": "",
+			"distrito": "LIMA",
+			"provincia": "SAN ISIDRO",
+			"departamento": "LIMA",
+			"pais": "PERU",
+			"ubigeo": ""
+		}
+	},
+	"receptor": {
+		"correo": "fredy-espiritu@hotmail.com",
+		"correoCopia": "",
+		"nombreComercial": "MAURICIO REGALADO, DEVORA NOEMI",
+		"nombreLegal": "MAURICIO REGALADO, DEVORA NOEMI",
+		"numeroDocumentoIdentidad": "10322875474",
+		"tipoDocumentoIdentidad": "RUC",
+		"domicilioFiscal": {
+			"direccion": "JIRON SAN MARTIN 420 HUARAZ 020101  ANCASH",
+			"urbanizacion": "HUARAZ",
+			"distrito": "",
+			"provincia": "HUARAZ",
+			"departamento": "ANCASH",
+			"pais": "PERU",
+			"ubigeo": ""
+		}
+	},
+	"sector": null,
+	"datosDocumento": {
+		"fechaEmision": "2021-05-04",
+		"fechaVencimiento": "2021-05-04",
+		"formaPago": "CONTADO",
+		"glosa": "CAMBIO DE TIPO DOCUMENTO",
+		"horaEmision": "00:00:00",
+		"moneda": "PEN",
+		"numero": "00000124",
+		"ordencompra": "",
+		"puntoEmisor": "",
+		"serie": "BN07",
+		"condicionPago": "CONTADO"
+	},
+	"comprobanteAjustado": {
+		"tipoDocumento": "BOLETA",
+		"serie": "B007",
+		"numero": "00010600",
+		"fechaEmision": "2021-05-04"
+	},
+	"detalleDocumento": [
+		{
+			"codigoProducto": "412742-4",
+			"codigoProductoSunat": "53111902",
+			"descripcion": "SENSE FLOW 2 W",
+			"tipoAfectacion": "GRAVADO_OPERACION_ONEROSA",
+			"unidadMedida": "PAR",
+			"cantidad": 1,
+			"valorVentaUnitarioItem": 218.898305,
+			"valorReferencialUnitarioItem": null,
+			"esPorcentaje": null,
+			"descuento": null
+		},
+		{
+			"codigoProducto": "412742-3.5",
+			"codigoProductoSunat": "53111902",
+			"descripcion": "SENSE FLOW 2 W",
+			"tipoAfectacion": "GRAVADO_OPERACION_ONEROSA",
+			"unidadMedida": "PAR",
+			"cantidad": 1,
+			"valorVentaUnitarioItem": 218.898305,
+			"valorReferencialUnitarioItem": null,
+			"esPorcentaje": null,
+			"descuento": null
+		},
+		{
+			"codigoProducto": "411076-4",
+			"codigoProductoSunat": "53111902",
+			"descripcion": "SUPERCROSS BLAST W",
+			"tipoAfectacion": "GRAVADO_OPERACION_ONEROSA",
+			"unidadMedida": "PAR",
+			"cantidad": 1,
+			"valorVentaUnitarioItem": 201.101695,
+			"valorReferencialUnitarioItem": null,
+			"esPorcentaje": null,
+			"descuento": null
+		},
+		{
+			"codigoProducto": "411076-3.5",
+			"codigoProductoSunat": "53111902",
+			"descripcion": "SUPERCROSS BLAST W",
+			"tipoAfectacion": "GRAVADO_OPERACION_ONEROSA",
+			"unidadMedida": "PAR",
+			"cantidad": 1,
+			"valorVentaUnitarioItem": 201.101695,
+			"valorReferencialUnitarioItem": null,
+			"esPorcentaje": null,
+			"descuento": null
+		},
+		{
+			"codigoProducto": "410420-6.5",
+			"codigoProductoSunat": "53111901",
+			"descripcion": "X REVEAL M",
+			"tipoAfectacion": "GRAVADO_OPERACION_ONEROSA",
+			"unidadMedida": "PAR",
+			"cantidad": 1,
+			"valorVentaUnitarioItem": 207.033898,
+			"valorReferencialUnitarioItem": null,
+			"esPorcentaje": null,
+			"descuento": null
+		},
+		{
+			"codigoProducto": "410420-7",
+			"codigoProductoSunat": "53111901",
+			"descripcion": "X REVEAL M",
+			"tipoAfectacion": "GRAVADO_OPERACION_ONEROSA",
+			"unidadMedida": "PAR",
+			"cantidad": 1,
+			"valorVentaUnitarioItem": 207.033898,
+			"valorReferencialUnitarioItem": null,
+			"esPorcentaje": null,
+			"descuento": null
+		},
+		{
+			"codigoProducto": "410420-7.5",
+			"codigoProductoSunat": "53111901",
+			"descripcion": "X REVEAL M",
+			"tipoAfectacion": "GRAVADO_OPERACION_ONEROSA",
+			"unidadMedida": "PAR",
+			"cantidad": 1,
+			"valorVentaUnitarioItem": 207.033898,
+			"valorReferencialUnitarioItem": null,
+			"esPorcentaje": null,
+			"descuento": null
+		},
+		{
+			"codigoProducto": "410412-7.5",
+			"codigoProductoSunat": "53111901",
+			"descripcion": "X RAISE BK M",
+			"tipoAfectacion": "GRAVADO_OPERACION_ONEROSA",
+			"unidadMedida": "PAR",
+			"cantidad": 1,
+			"valorVentaUnitarioItem": 212.966102,
+			"valorReferencialUnitarioItem": null,
+			"esPorcentaje": null,
+			"descuento": null
+		},
+		{
+			"codigoProducto": "410412-8",
+			"codigoProductoSunat": "53111901",
+			"descripcion": "X RAISE BK M",
+			"tipoAfectacion": "GRAVADO_OPERACION_ONEROSA",
+			"unidadMedida": "PAR",
+			"cantidad": 1,
+			"valorVentaUnitarioItem": 212.966102,
+			"valorReferencialUnitarioItem": null,
+			"esPorcentaje": null,
+			"descuento": null
+		},
+		{
+			"codigoProducto": "410412-8.5",
+			"codigoProductoSunat": "53111901",
+			"descripcion": "X RAISE BK M",
+			"tipoAfectacion": "GRAVADO_OPERACION_ONEROSA",
+			"unidadMedida": "PAR",
+			"cantidad": 1,
+			"valorVentaUnitarioItem": 212.966102,
+			"valorReferencialUnitarioItem": null,
+			"esPorcentaje": null,
+			"descuento": null
+		}
+	],
+	"informacionAdicional": {
+		"tipoOperacion": "VENTA_INTERNA"
+	},
+	"descuentoGlobal": null,
+	"factorCambio": 0.0,
+	"motivo": "DEVOLUCION_TOTAL"
+}
