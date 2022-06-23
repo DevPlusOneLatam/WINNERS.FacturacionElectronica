@@ -1,0 +1,144 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{285E4206-4C7D-4E08-BB2A-A42674321741}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Repository</RootNamespace>
+    <AssemblyName>Repository</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=5.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Bcl.AsyncInterfaces.5.0.0\lib\net461\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="System.Memory, Version=4.0.1.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Memory.4.5.4\lib\net461\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.Formatting, Version=5.2.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.5.2.7\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.5.0.0\lib\net45\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Encodings.Web, Version=5.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Text.Encodings.Web.5.0.0\lib\net461\System.Text.Encodings.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Threading.Tasks.Extensions.4.5.4\lib\net461\System.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ValueTuple, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.ValueTuple.4.5.0\lib\net461\System.ValueTuple.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ApiRepository.cs" />
+    <Compile Include="DbHelper.cs" />
+    <Compile Include="DbRepository.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Project>{e300b103-a108-496d-96dc-d544ebb5e0af}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Model\Model.csproj">
+      <Project>{194525e1-3dbc-4300-9645-5d404640d816}</Project>
+      <Name>Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\Queries\PLUS_FE_UPDATE_ESTADO_INTEGRADOR.sql" />
+    <Content Include="Resources\Queries\PLUS_FE_UPDATE_ESTADO_PDF.sql" />
+    <Content Include="Resources\Queries\PLUS_FE_UPDATE_ESTADO_SUNAT.sql" />
+    <Content Include="Resources\QueryManager\PLUS - Comprobantes pendientes o por corregir.sql" />
+    <Content Include="Resources\StoredProcedures\Cursor_AgregarDetalle.sql" />
+    <Content Include="Resources\StoredProcedures\IDC\IDC_FE_EXTRACCION_RESUMEN_DIARIO_DETALLE.sql" />
+    <Content Include="Resources\StoredProcedures\IDC\IDC_FE_EXTRACCION_RESUMEN_DIARIO_CABECERA.sql" />
+    <Content Include="Resources\StoredProcedures\IDC\IDC_FE_EXTRACCION_LISTA_RESUMEN.sql" />
+    <Content Include="Resources\StoredProcedures\IDC\IDC_FE_EXTRACCION_LINEA_IMPUESTO.sql" />
+    <Content Include="Resources\StoredProcedures\IDC\IDC_FE_EXTRACCION_LINEA.sql" />
+    <Content Include="Resources\StoredProcedures\IDC\IDC_FE_EXTRACCION_CABECERA.sql" />
+    <Content Include="Resources\StoredProcedures\IDC\IDC_FE_EXTRACCION_LEYENDA.sql" />
+    <Content Include="Resources\StoredProcedures\IDC\IDC_FE_EXTRACCION_IMPUESTO.sql" />
+    <Content Include="Resources\StoredProcedures\IDC\IDC_FE_EXTRACCION_GUIA_REMISION.sql" />
+    <Content Include="Resources\StoredProcedures\IDC\IDC_FE_EXTRACCION_DOCUMENTO_RELACIONADO.sql" />
+    <Content Include="Resources\StoredProcedures\IDC\IDC_FE_EXTRACCION_COMUNICACION_BAJA_DETALLE.sql" />
+    <Content Include="Resources\StoredProcedures\IDC\IDC_FE_EXTRACCION_COMUNICACION_BAJA_CABECERA.sql" />
+    <Content Include="Resources\StoredProcedures\IDC\IDC_FE_EXTRACCION_COMPROBANTE_PAGO.sql" />
+    <Content Include="Resources\StoredProcedures\IDC\IDC_FE_EXTRACCION_ANTICIPO.sql" />
+    <Content Include="Resources\StoredProcedures\IDC\IDC_DOC_GENERAR_TXT.sql" />
+    <Content Include="Resources\StoredProcedures\IDC\IDC_DOC_EXTRACCION_LINEA.sql" />
+    <Content Include="Resources\StoredProcedures\IDC\IDC_DOC_DOCUMENTOS_PENDIENTES.sql" />
+    <Content Include="Resources\StoredProcedures\IDC\IDC_DOC_CONSULTAR_DOCUMENTOS.sql" />
+    <Content Include="Resources\StoredProcedures\IDC\IDC_DOC_EXTRACCION_CABECERA.sql" />
+    <Content Include="Resources\StoredProcedures\PLUS_FE_SP_DATOS_EMISOR.sql" />
+    <Content Include="Resources\StoredProcedures\PLUS_FE_SP_LISTAR_BAJAS_PENDIENTES.sql" />
+    <Content Include="Resources\StoredProcedures\PLUS_FE_SP_LISTAR_GUIAS_REFERENCIAS.sql" />
+    <Content Include="Resources\StoredProcedures\PLUS_FE_SP_LISTAR_CUOTAS.sql" />
+    <Content Include="Resources\StoredProcedures\PLUS_FE_SP_LISTAR_DOCUMENTOS_ENVIADOS.sql" />
+    <Content Include="Resources\StoredProcedures\PLUS_FE_SP_LISTAR_ANTICIPOS.sql" />
+    <Content Include="Resources\StoredProcedures\PLUS_FE_SP_DATOS_GUIA_REMISION.sql" />
+    <Content Include="Resources\StoredProcedures\PLUS_FE_FN_CATALOGO.sql" />
+    <Content Include="Resources\StoredProcedures\Cursor_AgregarGuiaRemision.sql" />
+    <Content Include="Resources\StoredProcedures\PLUS_FE_SP_LISTAR_DOCUMENTOS_PENDIENTES.sql" />
+    <Content Include="Resources\StoredProcedures\PLUS_FE_SP_LISTAR_LINEAS.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

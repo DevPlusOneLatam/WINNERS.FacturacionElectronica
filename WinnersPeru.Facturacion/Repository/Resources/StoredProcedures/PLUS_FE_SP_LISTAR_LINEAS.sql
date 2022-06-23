@@ -1,0 +1,162 @@
+CREATE PROCEDURE PLUS_FE_SP_LISTAR_LINEAS
+(
+@ObjType VARCHAR(15),
+@DocEntry INT
+)
+AS BEGIN
+
+DECLARE @ML NVARCHAR(3) = (SELECT TOP 1 T0."MainCurncy" FROM OADM T0)
+
+SELECT *,
+	"ES_GRATUIDAD"		= CASE WHEN "TIPO_AFECTACION" NOT LIKE '%OPERACION_ONEROSA' AND "TIPO_AFECTACION" <> 'EXPORTACION' THEN 'TRUE' ELSE 'FALSE' END,
+	"ES_DESCUENTO_LINEA"= CASE WHEN "DESCUENTO_MONTO" <> 0 THEN 'TRUE' ELSE 'FALSE' END
+FROM (
+SELECT 
+"FACTURACION_ID"	= MAX(T3."U_BPP_MDTD"+'-'+T3."U_BPP_MDSD"+'-'+RIGHT('00000000' + LTRIM(RTRIM(T3."U_BPP_MDCD")),8)),
+"NUMERO_LINEA"		= T1."LineNum"+1,
+"CODIGO_PRODUCTO"	= MAX(CASE WHEN T3."DocType" = 'S' THEN NULL ELSE LEFT(T1."ItemCode",16) END),
+"CODIGO_SUNAT"		= MAX(T2."U_IDC_CODARTSUNAT"),
+"DESCRIPCION"		= MAX(ISNULL(T1."Dscription",'')),
+"UNIDAD_MEDIDA"		= MAX(CASE WHEN T3."DocType" = 'S' THEN 'ZZ' ELSE ISNULL(T1."unitMsr",T1."unitMsr2") END),
+"UNIDAD_SUNAT"		= (SELECT dbo.PLUS_FE_FN_CATALOGO('UNDME',MAX(CASE WHEN T3."DocType" = 'S' THEN 'ZZ' ELSE ISNULL(T1."unitMsr",T1."unitMsr2") END))),
+"TIPO_AFECTACION"	= (SELECT dbo.PLUS_FE_FN_CATALOGO('TAFEC',MAX(T1."U_IDC_TAFE"))),
+"CANTIDAD"			= MAX(CASE WHEN T3."DocType" = 'S' THEN 1.00 ELSE T1."Quantity" END),
+"VALOR_UNITARIO"	= MAX(CASE WHEN T1."DiscPrcnt" = 0 THEN T1."Price" ELSE T1.PriceBefDi END),
+"PRECIO_VENTA_UNITARIO" = MAX(T1."PriceAfVAT"), -- Debe tener el descuento aplicado
+"VALOR_VENTA"		= MAX(T1."Price" * (CASE WHEN T3."DocType" = 'S' THEN 1.00 ELSE T1."Quantity" END)),
+"DESCUENTO_PORCENTAJE" = MAX(CASE WHEN T1."U_IDC_TAFE" IN ('10','20','30','40') THEN ISNULL(T1."DiscPrcnt", 0.00) ELSE 0.00 END),
+"DESCUENTO_MONTO"	= MAX(CASE WHEN T1."U_IDC_TAFE" IN ('10','20','30','40') THEN (T1."PriceBefDi"-T1."Price")*(CASE WHEN T3."DocType" = 'S' THEN 1 ELSE T1."Quantity" END) ELSE 0.00 END),
+"IMPORTE_IGV"		= MAX(CASE WHEN T1."VatPrcnt" = 0 THEN 0.00 ELSE ROUND(T1."Quantity" * T1."Price" * (T1."VatPrcnt"/100),2) END),
+"IMPORTE_TOTAL"		= MAX((CASE WHEN T1."U_IDC_TAFE" IN ('10','11','12','13','14','15','16','17','20','30','40') 
+							THEN 
+								CASE WHEN T1."Quantity" = 1 OR T3."DocType" = 'S'
+									THEN  T1."PriceAfVAT" 
+									ELSE  CASE WHEN T1."Currency"=@ML THEN T1."LineTotal" + T1."VatSum"  ELSE T1."TotalFrgn" + T1."VatSumFrgn" END
+								END
+							ELSE 0.00 END))
+FROM INV1 T1 
+INNER JOIN OINV T3 ON T1."DocEntry" = T3."DocEntry"
+LEFT JOIN  OITM T2 ON T1."ItemCode" = T2."ItemCode"
+LEFT JOIN  OITT T4 ON T4."Code" = T1."ItemCode"
+WHERE T3."DocEntry" = @DocEntry AND T3."ObjType" = @ObjType AND T1."TreeType"<>'I'
+GROUP BY T1."LineNum",T1."DocEntry",T1."ItemCode",T1."BaseEntry"
+
+UNION ALL
+
+SELECT 
+"FACTURACION_ID"	= MAX(T3."U_BPP_MDTD"+'-'+T3."U_BPP_MDSD"+'-'+RIGHT('00000000' + LTRIM(RTRIM(T3."U_BPP_MDCD")),8)),
+"NUMERO_LINEA"		= T1."LineNum"+1,
+"CODIGO_PRODUCTO"	= MAX(CASE WHEN T3."DocType" = 'S' THEN NULL ELSE LEFT(T1."ItemCode",16) END),
+"CODIGO_SUNAT"		= MAX(T2."U_IDC_CODARTSUNAT"),
+"DESCRIPCION"		= MAX(ISNULL(T1."Dscription",'')),
+"UNIDAD_MEDIDA"		= MAX(CASE WHEN T3."DocType" = 'S' THEN 'ZZ' ELSE ISNULL(T1."unitMsr",T1."unitMsr2") END),
+"UNIDAD_SUNAT"		= (SELECT dbo.PLUS_FE_FN_CATALOGO('UNDME',MAX(CASE WHEN T3."DocType" = 'S' THEN 'ZZ' ELSE ISNULL(T1."unitMsr",T1."unitMsr2") END))),
+"TIPO_AFECTACION"	= (SELECT dbo.PLUS_FE_FN_CATALOGO('TAFEC',MAX(T1."U_IDC_TAFE"))),
+"CANTIDAD"			= MAX(CASE WHEN T3."DocType" = 'S' THEN 1.00 ELSE T1."Quantity" END),
+"VALOR_UNITARIO"	= MAX(CONVERT(NUMERIC(16,6), CASE WHEN T1."DiscPrcnt" = 0 THEN ROUND(T1."Price"*T3."DpmPrcnt"/100.0,6) ELSE ROUND(T1."PriceBefDi"*T3."DpmPrcnt"/100.0,6)END)),
+"PRECIO_VENTA_UNITARIO" = MAX(ROUND(T1."PriceAfVAT"*T3."DpmPrcnt"/100.0,2)),
+"VALOR_VENTA"		= MAX(CAST(ROUND((CASE WHEN T1."U_IDC_TAFE" IN ('10','20','30','40') THEN ( 
+												T1."Price"*(CASE WHEN T3."DocType" = 'S' THEN 1 ELSE T1."Quantity" END)
+									 )ELSE 0.00 END)*T3."DpmPrcnt"/100.0,2) AS NUMERIC(19,6))),
+"DESCUENTO_PORCENTAJE" = MAX(CASE WHEN T1."U_IDC_TAFE" IN ('10','20','30','40') THEN ISNULL(T1."DiscPrcnt", 0.00) ELSE 0.00 END),
+"DESCUENTO_MONTO"	= MAX(CASE WHEN T1."U_IDC_TAFE" IN ('10','20','30','40') THEN ROUND((T1."PriceBefDi"-T1."Price")*(CASE WHEN T3."DocType" = 'S' THEN 1 ELSE T1."Quantity" END)*T3."DpmPrcnt"/100.0,2) ELSE 0.00 END),
+"IMPORTE_IGV"		= MAX(ROUND(CASE WHEN T1."Currency"=@ML THEN T1."VatSum" ELSE T1."VatSumFrgn" END,2)),
+"IMPORTE_TOTAL"		= MAX((CASE WHEN T1."U_IDC_TAFE" IN ('10','20','30','40') 
+							THEN 
+								ROUND((CASE WHEN T1."Quantity" = 1 OR T3."DocType" = 'S'
+									THEN T1."PriceAfVAT" 
+									ELSE CASE WHEN T1."Currency"=@ML THEN T1."LineTotal" + T1."VatSum"  ELSE T1."TotalFrgn" + T1."VatSumFrgn" END
+								END)*T3."DpmPrcnt"/100.0,2)
+							ELSE 0.00 END))
+FROM DPI1 T1 
+INNER JOIN ODPI T3 ON T1."DocEntry" = T3."DocEntry"
+LEFT JOIN  OITM T2 ON T1."ItemCode" = T2."ItemCode"
+LEFT JOIN  OITT T4 ON T4."Code" = T1."ItemCode"
+WHERE T3."DocEntry" = @DocEntry AND T3."ObjType" = @ObjType AND T1."TreeType"<>'I'
+GROUP BY T1."LineNum",T1."DocEntry",T1."ItemCode",T1."BaseEntry"
+
+UNION ALL
+
+SELECT 
+"FACTURACION_ID"	= MAX(T3."U_BPP_MDTD"+'-'+T3."U_BPP_MDSD"+'-'+RIGHT('00000000' + LTRIM(RTRIM(T3."U_BPP_MDCD")),8)),
+"NUMERO_LINEA"		= T1."LineNum"+1,
+"CODIGO_PRODUCTO"	= MAX(CASE WHEN T3."DocType" = 'S' THEN NULL ELSE LEFT(T1."ItemCode",16) END),
+"CODIGO_SUNAT"		= MAX(T2."U_IDC_CODARTSUNAT"),
+"DESCRIPCION"		= MAX(ISNULL(T1."Dscription",'')),
+"UNIDAD_MEDIDA"		= MAX(CASE WHEN T3."DocType" = 'S' THEN 'ZZ' ELSE ISNULL(T1."unitMsr",T1."unitMsr2") END),
+"UNIDAD_SUNAT"		= (SELECT dbo.PLUS_FE_FN_CATALOGO('UNDME',MAX(CASE WHEN T3."DocType" = 'S' THEN 'ZZ' ELSE ISNULL(T1."unitMsr",T1."unitMsr2") END))),
+"TIPO_AFECTACION"	= (SELECT dbo.PLUS_FE_FN_CATALOGO('TAFEC',MAX(T1."U_IDC_TAFE"))),
+"CANTIDAD"			= MAX(CASE WHEN T3."DocType" = 'S' THEN 1.00 ELSE T1."Quantity" END),
+"VALOR_UNITARIO"	= MAX(CONVERT(NUMERIC(16,6), CASE WHEN T3."DiscPrcnt" = 0 THEN T1."Price" ELSE ROUND(T1."Price" - (T1."Price" * T3."DiscPrcnt"/100),6) END)), /*En NC el descuento debe estar aplicado (Descuento de linea y global)*/
+"PRECIO_VENTA_UNITARIO" = MAX(CASE WHEN T3."DiscPrcnt" = 0 THEN T1."PriceAfVAT" ELSE  ROUND((T1."Price" - (T1."Price" * T3."DiscPrcnt"/100)) * (T1."VatPrcnt"/100+1),2) END),
+"VALOR_VENTA"		= MAX((CASE WHEN T3."DiscPrcnt" = 0 THEN T1."Price" ELSE T1."Price" - (T1."Price" * T3."DiscPrcnt"/100) END) * (CASE WHEN T3."DocType" = 'S' THEN 1 ELSE T1."Quantity" END )),
+"DESCUENTO_PORCENTAJE" = 0.00, /*En NC el descuento debe estar aplicado*/
+"DESCUENTO_MONTO"	= 0.00, /*En NC el descuento debe estar aplicado*/
+"IMPORTE_IGV"		= MAX(CASE WHEN T1."Currency"=@ML THEN T1."VatSum" ELSE T1."VatSumFrgn" END),
+"IMPORTE_TOTAL"		= MAX((CASE WHEN T1."U_IDC_TAFE" IN ('10','20','30','40') 
+							THEN 
+								CASE WHEN T1."Quantity" = 1 OR T3."DocType" = 'S'
+									THEN (CASE WHEN T3."DiscPrcnt" = 0 THEN T1."PriceAfVAT" ELSE  ROUND((T1."Price" - (T1."Price" * T3."DiscPrcnt"/100)) * (T1."VatPrcnt"/100+1),2) END)
+									ELSE CASE WHEN T1."Currency"=@ML THEN T1."LineTotal" + T1."VatSum"  ELSE T1."TotalFrgn" + T1."VatSumFrgn" END
+								END
+							ELSE 0.00 END))
+FROM RIN1 T1 
+INNER JOIN ORIN T3 ON T1."DocEntry" = T3."DocEntry"
+LEFT JOIN  OITM T2 ON T1."ItemCode" = T2."ItemCode"
+LEFT JOIN  OITT T4 ON T4."Code" = T1."ItemCode"
+WHERE T3."DocEntry" = @DocEntry AND T3."ObjType" = @ObjType AND T1."TreeType"<>'I'
+GROUP BY T1."LineNum",T1."DocEntry",T1."ItemCode",T1."BaseEntry"
+
+UNION ALL
+
+SELECT
+"FACTURACION_ID"	= T3."U_BPP_MDTD"+'-'+T3."U_BPP_MDSD"+'-'+RIGHT('00000000' + LTRIM(RTRIM(T3."U_BPP_MDCD")),8),
+"NUMERO_LINEA"		= T1."LineNum"+1,
+"CODIGO_PRODUCTO"	= CASE WHEN T3."DocType" = 'S' THEN NULL ELSE LEFT(T1."ItemCode",16) END,
+"CODIGO_SUNAT"		= T2."U_IDC_CODARTSUNAT",
+"DESCRIPCION"		= ISNULL(T1."Dscription",''),
+"UNIDAD_MEDIDA"		= CASE WHEN T3."DocType" = 'S' THEN 'ZZ' ELSE ISNULL(T1."unitMsr",T1."unitMsr2") END,
+"UNIDAD_SUNAT"		= (SELECT dbo.PLUS_FE_FN_CATALOGO('UNDME',CASE WHEN T3."DocType" = 'S' THEN 'ZZ' ELSE ISNULL(T1."unitMsr",T1."unitMsr2") END)),
+"TIPO_AFECTACION"	= NULL,
+"CANTIDAD"			= CASE WHEN T3."DocType" = 'S' THEN 1.00 ELSE T1."Quantity" END,
+"VALOR_UNITARIO"	= 0.00,
+"PRECIO_VENTA_UNITARIO" = 0.00,
+"VALOR_VENTA"		= 0.00,
+"DESCUENTO_PORCENTAJE" = 0.00,
+"DESCUENTO_MONTO"	= 0.00,
+"IMPORTE_IGV"		= 0.00,
+"IMPORTE_TOTAL"		= 0.00
+FROM DLN1 T1 
+INNER JOIN ODLN T3 ON T1."DocEntry" = T3."DocEntry"
+LEFT JOIN  OITM T2 ON T1."ItemCode" = T2."ItemCode"
+LEFT JOIN  OITT T4 ON T4."Code" = T1."ItemCode"
+WHERE T3."DocEntry" = @DocEntry AND T3."ObjType" = @ObjType AND T1."TreeType"<>'I'
+
+UNION ALL
+
+SELECT 
+"FACTURACION_ID"	= T3."U_BPP_MDTD"+'-'+T3."U_BPP_MDSD"+'-'+RIGHT('00000000' + LTRIM(RTRIM(T3."U_BPP_MDCD")),8),
+"NUMERO_LINEA"		= T1."LineNum"+1,
+"CODIGO_PRODUCTO"	= CASE WHEN T3."DocType" = 'S' THEN NULL ELSE LEFT(T1."ItemCode",16) END,
+"CODIGO_SUNAT"		= T2."U_IDC_CODARTSUNAT",
+"DESCRIPCION"		= ISNULL(T1."Dscription",''),
+"UNIDAD_MEDIDA"		= CASE WHEN T3."DocType" = 'S' THEN 'ZZ' ELSE ISNULL(T1."unitMsr",T1."unitMsr2") END,
+"UNIDAD_SUNAT"		= (SELECT dbo.PLUS_FE_FN_CATALOGO('UNDME',CASE WHEN T3."DocType" = 'S' THEN 'ZZ' ELSE ISNULL(T1."unitMsr",T1."unitMsr2") END)),
+"TIPO_AFECTACION"	= NULL,
+"CANTIDAD"			= CASE WHEN T3."DocType" = 'S' THEN 1.00 ELSE T1."Quantity" END,
+"VALOR_UNITARIO"	= 0.00,
+"PRECIO_VENTA_UNITARIO" = 0.00,
+"VALOR_VENTA"		= 0.00,
+"DESCUENTO_PORCENTAJE" = 0.00,
+"DESCUENTO_MONTO"	= 0.00,
+"IMPORTE_IGV"		= 0.00,
+"IMPORTE_TOTAL"		= 0.00
+FROM WTR1 T1 
+INNER JOIN OWTR T3 ON T1."DocEntry" = T3."DocEntry"
+LEFT JOIN  OITM T2 ON T1."ItemCode" = T2."ItemCode"
+LEFT JOIN  OITT T4 ON T4."Code" = T1."ItemCode"
+WHERE T3."DocEntry" = @DocEntry AND T3."ObjType" = @ObjType AND T1."TreeType"<>'I'
+
+) T
+
+END
